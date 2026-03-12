@@ -17,6 +17,30 @@
                     margin:auto;
                     margin-top: 100px;    
             }
+            .player{
+                position: relative;
+                display: inline-block;
+            }
+
+            .anh{
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                
+
+                width: 101px;
+                height: 154px;
+                /* background: url(cris.jpg) no-repeat center; */
+                background-size: cover;
+
+                display: none;
+            }
+
+            .player:hover .anh{
+                display: block;
+            }
         </style>
     </head>
 
@@ -27,31 +51,31 @@
 
         <div>
             <ul>
-                <caption>List</caption>
                 <li><a href="#survey">Survey</a></li>
                 <li><a href="#club">Club</a></li>
             </ul>
         </div>
 
+        <div><button onclick="alert('Ngu thế:3')">Bấm vào</button></div>
         <div>
             <table border="1px" id="survey">
-                <tr><th>Name</th><th>face id</th><th>God</th><th>Top</th><th>Normal</th><th>Stupid</th><th>Rubbish</th></tr>
-                <tr><td>Cristiano Ronaldo</td><td><img src="cris.jpg" alt="cr7" width="50%" height="50%"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td></tr>
-                <tr><td>Geroge Best</td><td><img src="best.jpg" alt="best" width="50%" height="50%"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td></tr>
-                <tr><td>Wayne Rooney</td><td><img src="rooney.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td></tr>
-                <tr><td>Bruno Fernandes</td><td><img src="bruno.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td></tr>
-                <tr><td>David Beckham</td><td><img src="beck.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td></tr>
-                <tr><td>Bastian Schweinsteiger</td><td><img src="schw.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td></tr>
-                <tr><td>Nemanja Vidić</td><td><img src="vidic.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td></tr>
-                <tr><td>Rio Ferdinand</td><td><img src="rio.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td></tr>
-                <tr><td>Luke Shaw</td><td><img src="download.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td></tr>
-                <tr><td>Park Ji-sung</td><td><img src="sung.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td></tr>
-                <tr><td>Van Der Sar</td><td><img src="sar.jpg" alt="" width="50%" height="50%"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td></tr>
+                <tr><th>Name</th><th>God</th><th>Top</th><th>Normal</th><th>Stupid</th><th>Rubbish</th></tr>
+                <tr><td class="player">Cristiano Ronaldo      <div class="anh" style="background-image: url(cris.jpg);">  </div></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td><td><input type="radio" name="cr7"></td></tr>
+                <tr><td class="player">George Best            <div class="anh" style="background-image: url(best.jpg);">  </div></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td><td><input type="radio" name="best"></td></tr>
+                <tr><td class="player">Wayne Rooney           <div class="anh" style="background-image: url(rooney.jpg);"></div></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td><td><input type="radio" name="roo"></td></tr>
+                <tr><td class="player">Bruno Fernandes        <div class="anh" style="background-image: url(bruno.jpg);"> </div></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td><td><input type="radio" name="bru"></td></tr>
+                <tr><td class="player">David Beckham          <div class="anh" style="background-image: url(beck.jpg);">  </div></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td><td><input type="radio" name="beck"></td></tr>
+                <tr><td class="player">Bastian Schweinsteiger <div class="anh" style="background-image: url(schw.jpg);">  </div></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td><td><input type="radio" name="xoai"></td></tr>
+                <tr><td class="player">Nemanja Vidić          <div class="anh" style="background-image: url(vidic.jpg);"> </div></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td><td><input type="radio" name="vi"></td></tr>
+                <tr><td class="player">Rio Ferdinand          <div class="anh" style="background-image: url(rio.jpg);">   </div></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td><td><input type="radio" name="rio"></td></tr>
+                <tr><td class="player">Luke Shaw              <div class="anh" style="background-image: url(shaw.jpg);">  </div></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td><td><input type="radio" name="shaw"></td></tr>
+                <tr><td class="player">Park Ji-sung           <div class="anh" style="background-image: url(sung.jpg);">  </div></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td><td><input type="radio" name="sung"></td></tr>
+                <tr><td class="player">Van Der Sar            <div class="anh" style="background-image: url(sar.jpg);">   </div></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td><td><input type="radio" name="sar"></td></tr>
             </table>
         </div>
 
         <div>
-            <img src="sanbong.jpg" alt="" width="40%" class="ima" id="club">
+            <img src="club.png" alt="" width="60%" height="100%" class="ima" id="club">
         </div>
 
     </body>
